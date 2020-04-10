@@ -1,11 +1,13 @@
 
 let myVar ;
+
 function startTimer() {
  myVar = setInterval(myTimer, 1000);
 }
 
 let minutes = 25;
 let seconds = 0;
+let sessions = 4; 
 
 let btn = document.querySelector("#start");
 
@@ -23,9 +25,16 @@ function myTimer() {
             minutes--;
             seconds = 60;
         }
-    if(minutes == 0 && seconds == 0){
+    if(!sessions){
+        if(minutes == 0 && seconds == 0){
+           sessions = 4;
+           minutes = 15;
+          }
+        }
+        else if(minutes == 0 && seconds == 0){
+        sessions--;  
         minutes = 5 ;
-    }
+     }
 }
 
 function pauseTimer(){

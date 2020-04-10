@@ -3,13 +3,17 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/a41dfc4928.js" crossorigin="anonymous"></script>
   <title>Pomodoro Project</title>
 </head>
 <body>
- <button onclick = startTimer() id = "start">start</button>
- <p id= "timer" > 25:00</p>
- <button onclick = pauseTimer() id = "pause" > pause</button>
- <button onclick = resetTimer() id = "reset" > reset </button>
+  <h1 id ="header">ELEGANT TIMER</h1>
+  <div class = "mainTimer">
+   <button onclick = startTimer()  id = "start"><i class="fas fa-play"></i></button>
+   <p id= "timer" > 25 : 00</p>
+   <button onclick = pauseTimer() id = "pause" ><i class="fas fa-pause"></i></button>
+   <button onclick = resetTimer() id = "reset" ><i class="fas fa-step-backward"></i> </button>
+ </div>
 
 </body>
 <script src="script.js"></script>

@@ -1,4 +1,80 @@
+
+.mainTimer {
+	position: absolute;
+	display: block;
+	top: 100px;
+	left: 430px;
+	background-color: #ff5a5a;
+    width: 500px;
+    height: 350px;
+}
+
+#start{
+    position: relative;
+    left: 190px;
+    width: 100px;
+    height: 50px;
+    background-color: #e8e8e8;
+    border: none;
+    color: black;
+    text-align: center;
+    top: 10px;
+    border-radius: 3px;
+}
+
+#start:hover {
+    background-color: #dfd9d9;
+}
+
+#pause{
+    position: relative;
+    width: 100px;
+    height: 50px;
+    left: 100px;
+    background-color: #e8e8e8;
+    border: none;
+    color: black;
+    text-align: center;
+    bottom: 100px;
+    border-radius: 3px;
+}
+
+#pause:hover {
+    background-color: #dfd9d9;
+}
+
+
+#reset {
+    position: relative;
+    left : 200px;
+    width: 100px;
+    height: 50px;
+    background-color: #e8e8e8;
+    border: none;
+    color: black;
+    text-align: center;
+    border-radius: 3px;
+    bottom: 100px;
+
+}
+
+#reset:hover {
+    background-color: #dfd9d9;
+}
+
+
 #timer {
-    width = 50px;
-    height = 50px;
+    position: relative;
+	font-size: 100px;
+	border-style: solid;
+    text-align: center;
+    width: 400px;
+    left: 50px;
+    bottom: 50px;
+}
+
+#header {
+	position: absolute;
+	left: 438px ;
+	font-size: 50px;
 }
