@@ -9,8 +9,8 @@ let minutes = 25;
 let seconds = 0;
 let sessions = 3;
 let breakTime; 
-let startAudio = new Audio('sharp.mp3');
-let endAudio = new Audio('accomplished.mp3');
+let startAudio = new Audio('accomplished.mp3');
+let endAudio = new Audio('sharp.mp3');
 
 let btn = document.querySelector("#start");
 
@@ -31,7 +31,7 @@ function myTimer() {
             minutes--;
             seconds = 60;
         }
-    if(!sessions){
+      if(!sessions){
         if(minutes == 0 && seconds == 0){
            sessions = 4;
            breakTime = 15;
@@ -40,12 +40,16 @@ function myTimer() {
            endAudio.play();
           }
         }
-        else if(minutes == 0 && seconds == 0){
+        else if(minutes == 0 && seconds == 0 && minutes == 25){
         let audio = new Audio('accomplished.mp3');
         endAudio.play();
         sessions--;  
         breakTime = 5 ;
         minutes = breakTime;
+     }  else if(minutes == 0 && seconds == 0 && minutes == 5){
+        let audio = new Audio('accomplished.mp3');
+        endAudio.play();
+        minutes = 25;
      }
 }
 

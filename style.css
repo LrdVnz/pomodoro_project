@@ -7,6 +7,7 @@
 	background-color: #f0f0f0;
     width: 500px;
     height: 250px;
+    margin: auto;
     border: solid 1.5px gray;  
 }
 
@@ -81,7 +82,9 @@
 
 #header {
 	position: absolute;
-	left: 438px ;
+    left: 438px ;
+    width: 500px;
+    text-align: center;
 	font-size: 50px;
 }
 
@@ -115,28 +118,29 @@
     opacity: 1; 
   }
 
-  .firstSlider::-webkit-slider-thumb {
+.firstSlider::-webkit-slider-thumb {
     -webkit-appearance: none; 
     appearance: none;
     width: 15px; 
     height: 15px; 
     background: #bdbdbd; 
     cursor: pointer; 
-  }s
+  }
 
-  .firstSlider::-moz-range-thumb {
+.firstSlider::-moz-range-thumb {
     width: 15px; 
     height: 15px; 
     background: #bdbdbd; 
     cursor: pointer; 
   }
 
-  .timeAdvice {
+.timeAdvice {
 	position: absolute;
 	top: 400px;
-	width: 300px;
-	left: 550px;
-	text-decoration: underline;
+	width: 500px;
+	left: 438px;
+    text-decoration: underline;
+    text-align: center;
 }
 
 
